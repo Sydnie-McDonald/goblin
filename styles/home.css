@@ -1,1 +1,26 @@
 /* add home page styles here */
+body {
+    background-image: url(/assets/background.jpeg);
+    background-size: cover;
+    background-position: inherit;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: inherit;
+}
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px; /* 50% */
+    }
+}
+#fighter-img {
+    height: 250px;
+    width: 250px;
+}
+#logo {
+    height: 90px;
+    width: 150px;
+}

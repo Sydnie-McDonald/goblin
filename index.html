@@ -22,9 +22,31 @@
         </header>
         <main>
             <section class="main-section">
-                <img class="main-logo" src="./assets/alchemy-logo.png" />
-                <h2>Welcome to Alchemy Bootstrap!</h2>
+                <img class="main-logo" id="logo" src="./assets/alchemy-logo.png" />
+                <h2>Fighting Games</h2>
             </section>
+            <div class="fighter-stats">
+                <div class="defeated-fighter">
+                    <p>You have defeated <span id="defeated-number">0</span> fighters</p>
+                    <div class="defeated-list"></div>
+                </div>
+                <div class="fighter">
+                    <p>
+                        Your HP:
+                        <span id="fighter-hp">10</span>
+                    </p>
+                    <img id="fighter-img" src="./assets/fighter.png" />
+                </div>
+            </div>
+            <div class="fighter-stats">
+                <div>
+                    <form>
+                        <input name="fighter-name" />
+                        <button>Challenge Fighter</button>
+                    </form>
+                    <div class="fighter"></div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
