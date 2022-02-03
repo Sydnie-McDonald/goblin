@@ -1,5 +1,10 @@
 // import functions and grab DOM elements
-
+import { renderFighter } from './utils.js';
+const defeatedNumberEl = document.querySelector('#defeated-number');
+const fighterHPEl = document.querySelector('#fighter-hp');
+const fighterImgEl = document.querySelector('#adventurer-img');
+const form = document.querySelector('form');
+const fightersListEl = document.querySelector('.fighters');
 // let state
 
 // set event listeners 
