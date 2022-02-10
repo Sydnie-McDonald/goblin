@@ -28,14 +28,10 @@ body {
 
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    background-image: url(../assets/castle.png);
+    background-size: 105%;
+    background-position: center;
+    text-align: center;
 }
 
 section {
@@ -50,6 +46,11 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+}
+
+main {
+    height: 100%;
+    display: flex;
 }
 
 header {
@@ -73,15 +74,22 @@ header img {
     height: var(--header-height);
 }
 
-form {
-    padding: 20px;
-    display: flex;
-}
-
 p {
     margin: var(--gutter);
 }
-.adventurer-stats {
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
+
+.fighter-stats {
     width: 50%;
     height: 100%;
     display: flex;
@@ -90,19 +98,8 @@ p {
     justify-content: space-between;
 }
 
-.fighter {
-    color: #660000;
-    font-size: 2rem;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 5px;
-}
-
-.fighter p {
-    background-color: brown;
-    border-radius: 15px;
-    padding: 20px;
+.fighter img {
+    width: 250px;
 }
 
 .fighter-stats {
@@ -123,29 +120,45 @@ p {
     font-size: 2em;
 }
 .fighter-stats input {
-    font-size: 1rem;
+    font-size: 3rem;
     width: 80%;
 }
 
-.defeated {
+.defeated-list {
     text-align: center;
 }
 
-.defeated p {
-    font-size: 200px;
+.defeated-fighters p {
+    font-size: 2rem;
     color: white;
     background-color: rebeccapurple;
     padding: 20px;
     border-radius: 15px;
 }
 
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
+form {
+    padding: 20px;
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+}
+
+.fighter {
+    cursor: pointer;
+    border: solid 3px #5d086d;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #dda1eb;
+    justify-self: flex-end;
+    font-size: 3rem;
+}
+
+.dead {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.game-over {
+    transform: rotate(90deg);
 }
