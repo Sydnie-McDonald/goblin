@@ -126,10 +126,11 @@ footer {
 
 .defeated-list {
     text-align: center;
+    font-size: large;
 }
 
 .defeated-fighters p {
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     background-color: rebeccapurple;
     padding: 20px;

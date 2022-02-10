@@ -5,7 +5,6 @@ const defeatedEl = document.querySelector('#defeated');
 const fighterHPEl = document.querySelector('#fighter-hp');
 const fighterImg = document.querySelector('#fighter-img');
 const fightersList = document.querySelector('.fighters');
-const fightersEl = document.querySelector('.fighters');
 // let state
 let lostfighterCount = 0;
 let playerHP = 10;
